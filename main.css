@@ -47,7 +47,6 @@ p a::after { content: "]"}
     list-style-type: none;
     font-size: x-large;
     width: 50%;
-    max-width: 300px;
     margin: auto;
     padding:0;
 }
