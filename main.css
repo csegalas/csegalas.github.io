@@ -46,8 +46,6 @@ p a::after { content: "]"}
 .icons {
     list-style-type: none;
     font-size: x-large;
-    width: 50%;
-    margin: auto;
     padding:0;
 }
 
