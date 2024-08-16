@@ -1,9 +1,7 @@
 * {
-    --linkcolor2: #81B622;
     --bgcolor: #fff;
-    --highlight2: #5a7524;
-    --highlight: rgb(64, 101, 197);
-    --linkcolor: rgb(123, 190, 229);
+    --highlight: #4065c5;
+    --linkcolor: #7bbee5;
 }
 
 html {
