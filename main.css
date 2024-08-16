@@ -1,7 +1,9 @@
 * {
     --bgcolor: #fff;
-    --highlight: #4065c5;
-    --linkcolor: #7bbee5;
+    --highlight2: #4065c5;
+    --linkcolor2: #7bbee5;
+    --highlight: #48abe4;
+    --linkcolor: #9c948e;
 }
 
 html {
