@@ -1,0 +1,181 @@
+* { margin: 0; padding: 0; box-sizing: border-box;
+
+  /* Color scheme */
+
+  --textcolor: #121212;
+  --bgcolor: #fff;
+  --highlight: #48abe4;
+  --linkcolor: #A68A68;
+
+}
+
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+  line-height: 1.4;
+  color: var(--secondary-textcolor);
+  position: relative;
+  max-width: 64em;  /* remove this for a full-width layout */
+  margin: 0 auto;  /* centers the layout */
+}
+
+/* ------- Sections ------- */
+
+section {
+  padding: calc(6em + 5vw) 5vw 8vw 5vw;
+  /* ! Everything below is needed ! */
+  display: none;
+  position: absolute;
+  top: 0;
+  min-height: 100vh;
+  width: 100%;
+  background: var(--bgcolor);
+}
+
+section:target { /* Show section */
+  display: block;
+}
+
+section#home { /* Show #home by default */
+  display: block;
+}
+
+/* ------- Header ------- */
+
+header {
+  padding: 5vw 5vw 0 5vw;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  font-family: monospace;
+}
+
+header h1 {
+  font-size: 1.2em;
+  flex: 1; /* pushes nav to the right */
+  white-space: nowrap;
+  padding: 0 5vw .5em 0;
+}
+
+nav a:not(:last-of-type) {
+  margin-right: 1.5vw;
+}
+
+/* ------- Profile ------- */
+#me {
+  float: right;
+  margin-top: 50px;
+  max-width: 250px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/*  ------- Icons ------- */
+.icons {
+    list-style-type: none;
+    font-size: xx-large;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 200px;
+    margin-top: 30px;
+}
+
+.icons li {
+    display: inline;
+    width: 42px;
+}
+
+.icons a {
+    color: var(--highlight);
+}
+
+.icons a:hover {
+    color: var(--linkcolor);
+}
+
+/* ------- General ------- */
+
+a {
+  text-decoration: none;
+  color: var(--highlight);
+
+}
+p a::before { content: "["}
+p a::after { content: "]"}
+
+a:hover {
+  color: var(--linkcolor);
+}
+
+h2, h3, h4 {
+  font-size: 1em;
+  margin: 1.6em 0 .6em 0;
+}
+
+p, ul, ol, article {
+  max-width: 60ch; /* Limit line-length to 60 characters */
+  margin-bottom: .6em;
+}
+
+ul, ol {
+  padding-left: 2ch;
+}
+
+/* ------- Smaller screens ------- */
+
+@media only screen and (max-width: 680px) {
+  body { font-size: 16px; }
+  #me {
+    display: block;
+    width: 100%;
+    float: none;
+    margin: auto;
+    width: 200px;
+    margin-top: -30px;
+  }
+  .icons {
+    width: 100%;
+    margin-top: 30px;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  nav { width: 100%; } /* Fix for older webkit versions */
+  #me {
+    display: block;
+    width: 100%;
+    float: none;
+    margin: auto;
+    width: 200px;
+  }
+  nav a { display: block;}
+  .icons {
+    width: 100%;
+    margin-top: 30px;
+    margin: auto;
+  }
+}
+
+/* ------- Print ------- */
+
+@media print {
+
+  nav, .lightbox:target:after { display: none; }
+
+  article, figure, img {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Inline footnotes */
+
+  label + input + small { display: inline; }
+  label + input + small:before { content: "["; }
+  label + input + small:after { content: "]"; }
+
+}
