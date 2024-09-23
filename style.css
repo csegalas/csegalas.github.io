@@ -79,7 +79,6 @@ nav a:not(:last-of-type) {
     justify-content: space-between;
     width: 100%;
     max-width: 200px;
-    margin: auto;
     margin-top: 30px;
 }
 
@@ -136,8 +135,8 @@ ul, ol {
   }
   .icons {
     width: 100%;
-    margin-top: 30px;
     margin: auto;
+    margin-top: 30px;
   }
 }
 
@@ -148,6 +147,11 @@ ul, ol {
     float: none;
     margin: auto;
     width: 200px;
+  }
+  .icons {
+    width: 100%;
+    margin-top: 30px;
+    margin: auto;
   }
   nav a { display: block;}
 }
