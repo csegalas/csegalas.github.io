@@ -1,2 +1,3 @@
 # csegalas.github.io
-Academic page
+
+Files for my academic page. CSS is based on <https://github.com/orderedlist/minimal>.

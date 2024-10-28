@@ -1,56 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
   <head>
-
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-
     <title>Corentin Ségalas</title>
-    <meta name="description" content="Site description">
-    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32" />
-
-    <!-- Recommended minimum -->
-    <meta property="og:title" content="Corentin Ségalas">
-    <meta property="og:description" content="Academic website">
-
-    <!-- You could also inline the stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css"
-    integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg=="
-    crossorigin="anonymous"
-  />
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32" />
 
   </head>
   <body>
+    <div class="wrapper">
+      <header>
+        <h1>Corentin Ségalas</h1>
+        <img src = "moi.png" alt = "Corentin Ségalas" />
+        <p class="view"><a href="mailto:corentin.segalas@u-bordeaux.fr">Email</a> / <a href="http://github.com/csegalas">Github</a> / <a href="https://scholar.google.com/citations?user=hASyJFUAAAAJ">Scholar</a></p>
+      </header>
 
-    <header>
-      <h1>
-        <a href="#home">Corentin Ségalas</a>
-      </h1>
-      <nav>
-        <a href="#publications">Publications</a>
-        <a href="#talks">Talks</a>
-      </nav>
-    </header>
-
-    <main>
-
-      <section id="home"> <!-- home -->
-
-        <img src="moi.png" id="me"/>
-
-        <h2>Hello</h2>
-
-        <p>I'm a statistics research fellow at <a href="https://www.bordeaux-population-health.center" alt = "Bordeaux Population Health">Bordeaux Population Health</a>, developing predictive models from longitudinal data using random forests and functional data methods. Previously, I worked on causal inference in <a href="https://www.lshtm.ac.uk/research/faculties/eph/department-medical-statistics" alt = "London School of Hygiene and Tropical Medicine - Medical Statistics Department">London</a> and <a href="https://cress-umr1153.fr/fr/teams/methods/" alt="Team Methods">Paris</a>, and my <a href="https://theses.hal.science/tel-02460690", alt="PhD">PhD</a>, defended in december 2019, focused on random changepoint models for cognitive ageing.</p>
-
-        <p>Find my full resume <a href="cv.pdf">here</a>.</p>
+      <section>
+        <h1>Hello</h1>
+        <p>I'm a statistics research fellow at <a href="https://www.bordeaux-population-health.center" alt = "Bordeaux Population Health">Bordeaux Population Health</a>, developing predictive models from longitudinal data using random forests and functional data methods. Previously, I worked on causal inference in <a href="https://www.lshtm.ac.uk/research/faculties/eph/department-medical-statistics" alt = "London School of Hygiene and Tropical Medicine - Medical Statistics Department">London</a> and <a href="https://cress-umr1153.fr/fr/teams/methods/" alt="Team Methods">Paris</a>, and my <a href="https://theses.hal.science/tel-02460690", alt="PhD">PhD</a>, defended in december 2019, focused on random changepoint models for cognitive ageing. Find my full resume <a href="cv.pdf">here</a>.</p>
 
         <h2>Research interests</h2>
         <ul>
@@ -61,28 +29,6 @@
           <li>Causal inference and missing data</li>
         </ul>
 
-        <ul class="icons">
-          <li>
-            <a href="mailto:corentin.segalas@u-bordeaux.fr" title="E-Mail"><i class="fas fa-envelope"></i></a>
-          </li>
-          <li>
-            <a href="https://github.com/csegalas" title="GitHub"><i class="fab fa-github"></i></a>
-          </li>
-           <!--<li>
-            <a href="https://orcid.org/0000-0002-6902-003X" title="Orcid"><i class="ai ai-orcid"></i></a>
-          </li> -->
-          <li>
-            <a href="https://scholar.google.com/citations?user=hASyJFUAAAAJ" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
-          </li>
-        </ul>
-
-      </section>
-
-
-      <section id="publications"> <!-- publications -->
-
-        <img src="moi.png" id="me"/>
-
         <h2>Selected publications</h2>
           <ul>
             <li>&#x2728; Ségalas C, Helmer C, Genuer R, Proust-Lima C. <a href="https://onlinelibrary.wiley.com/doi/10.1002/sim.10214">Functional principal component analysis as an alternative to mixed-effect models for describing sparse repeated measures in presence of missing data</a>, Statistics in Medicine, 2024.</li>
@@ -91,24 +37,19 @@
             <li>Ségalas C, Amieva H, Jacqmin-Gadda H. <a href="https://journals.sagepub.com/doi/10.1177/0962280219898719">A hypothesis testing procedure for random changepoint mixed models</a>, Statistics in Medicine, 2019.</li>
           </ul>
 
+          <h2>Selected talks</h2>
+          <ul>
+            <li><a href="talks/iscb2024.pdf">Dynamic random survival forests using functional principal component analysis for the prediction of survival outcomes from time-varying predictors</a>, <em>ISCB Conference</em>, Thessaloniki, July 2024.</li>
+            <li><a href="talks/jdb2023.pdf">Robustness to missing data: comparison between mixed-effects model and functional principal component analysis</a>, <em>French Biometrics Societies Conference</em>, Toulouse, November 2023.</li>
+            <li><a href="talks/jds2023.pdf">Multiple imputation in propensity score matching: obtaining correct confidence intervals</a>, <em>ISCB Conference</em>, Lyon, July 2021.</li>
+            <li><a href="talks/schwartz.pdf">Inference for random changepoint models: application to the pre-dementia cognitive decline</a>, <em>Daniel Schwartz PhD Award talk</em>, Paris, October 2020.</li>
+            <li><a href="talks/iscb2019.pdf">Inferential methods for random changepoint models</a>, <em>ISCB Conference</em>, Leuven, July 2019.</li>
+          </ul>
       </section>
-
-      <section id="talks"> <!-- talks -->
-
-        <img src="moi.png" id="me"/>
-
-        <h2>Selected talks</h2>
-        <ul>
-          <li><a href="talks/iscb2024.pdf">Dynamic random survival forests using functional principal component analysis for the prediction of survival outcomes from time-varying predictors</a>, <em>ISCB Conference</em>, Thessaloniki, July 2024.</li>
-          <li><a href="talks/jdb2023.pdf">Robustness to missing data: comparison between mixed-effects model and functional principal component analysis</a>, <em>French Biometrics Societies Conference</em>, Toulouse, November 2023.</li>
-          <li><a href="talks/jds2023.pdf">Multiple imputation in propensity score matching: obtaining correct confidence intervals</a>, <em>ISCB Conference</em>, Lyon, July 2021.</li>
-          <li><a href="talks/schwartz.pdf">Inference for random changepoint models: application to the pre-dementia cognitive decline</a>, <em>Daniel Schwartz PhD Award talk</em>, Paris, October 2020.</li>
-          <li><a href="talks/iscb2019.pdf">Inferential methods for random changepoint models</a>, <em>ISCB Conference</em>, Leuven, July 2019.</li>
-        </ul>
-
-      </section>
-
-    </main>
-
+      <footer>
+        <p><small><em>Last update: 10-2025</em> - CSS by <a href="https://github.com/orderedlist/minimal" alt="Orderlist Github">orderlist</a></small></p>
+       
+      </footer>
+    </div>
   </body>
 </html>
